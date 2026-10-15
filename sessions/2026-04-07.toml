@@ -1,0 +1,104 @@
+date = 2026-04-07
+drive_folder = "2026-04-07 Show and Tell"
+
+# Full meeting recording (51 min); per-talk clips were cut from it.
+[recording]
+video = "2026-04-07 Show and Tell/BACKUP_original.mov"
+
+[[talks]]
+presenter = "Zahra Sadeghizadeh"
+title = "Google Teachable Machine and Quick, Draw! in MAE 2"
+time = "12:05"
+summary = """
+Dr. Sadeghizadeh introduced AI literacy to MAE 2 freshmen through hands-on activities with \
+Quick, Draw! and Teachable Machine, sparking genuine reflection on AI’s limitations and the \
+irreplaceable role of human judgment in engineering."""
+
+  [[talks.links]]
+  label = "slides"
+  file = "2026-04-07 Show and Tell/Zahra SadeghizadehGoogle Teachable Machine and Quick, Draw! in MAE 2.pdf"
+  drive_id = "1wRY5393dc8J3pJ51k7qQLFLeKEuqtv2b"
+
+  [[talks.links]]
+  label = "video"
+  file = "2026-04-07 Show and Tell/Zahra SadeghizadehGoogle Teachable Machine and Quick, Draw! in MAE 2.mov"
+  drive_id = "1MLeFKRWFaITFTZ7EjEZKKxicCUxoMR49"
+
+[[talks]]
+presenter = "Lelli Van Den Einde"
+title = "Identifying students-in-need with ChatGPT"
+time = "12:15"
+summary = """
+Dr. Van Den Einde uses LLMs to analyze weekly student reflections and assignment data in a \
+350-student freshman engineering course, automatically drafting personalized instructor emails to \
+identify struggling students early and make them feel seen — with a live controlled study underway \
+this quarter."""
+
+  [[talks.links]]
+  label = "slides"
+  file = "2026-04-07 Show and Tell/Lelli Van Den EindeIdentifying students-in-need with ChatGPT.pdf"
+  drive_id = "1toJ5oTh_atr05i9bYcQbWzxLybet-dHv"
+
+  [[talks.links]]
+  label = "video"
+  file = "2026-04-07 Show and Tell/Lelli Van Den EindeIdentifying students-in-need with ChatGPT.mov"
+  drive_id = "12ri-dIGdlllXGMZvHaMgP6n28kjzkWUx"
+
+[[talks]]
+presenter = "Joe Politz"
+title = "Grading when students use GenAI for everything"
+time = "12:25"
+summary = """
+Dr. Politz describes a grading system built around in-person “skill demonstrations” — proctored, \
+step-by-step practical exams with coarse pass/fail rubrics and multiple retries — designed to give \
+meaningful assessment of what students can actually do independently, in an era where \
+collaboration, helpful TAs, and LLMs all confound take-home work."""
+
+  [[talks.links]]
+  label = "notes"
+  url = "https://jpolitz.github.io/notes/2024/06/03/high-standards-multiple-tries.html"
+
+  [[talks.links]]
+  label = "video"
+  file = "2026-04-07 Show and Tell/Joe PolitzGrading when students use GenAI for everything..mov"
+  drive_id = "1khX7XWkbhpOQZC45JwD_kDyvAKy1iyoa"
+
+[[talks]]
+presenter = "Adalbert Gerald Soosai Raj"
+title = "Human-centered teaching"
+time = "12:35"
+summary = """
+Dr. Soosai Raj redesigned a 450-student intro programming course around handwritten, \
+process-oriented homework with manual grading and small student study groups — deliberately \
+putting humans back in the loop at every stage to counter the hollowing-out effect of AI tools on \
+authentic learning and student community."""
+
+  [[talks.links]]
+  label = "slides"
+  file = "2026-04-07 Show and Tell/Adalbert Gerald Soosai RajHuman-centered teaching.pdf"
+  drive_id = "1-1P2uPvWAEw-Qlrp7YO8Arel5tPHC6yE"
+
+  [[talks.links]]
+  label = "video"
+  file = "2026-04-07 Show and Tell/Adalbert Gerald Soosai RajHuman-centered teaching.mov"
+  drive_id = "1DP4a3XqIrpPviWTKWLYNykMNXI0ndTUo"
+
+[[talks]]
+presenter = "Edward Jay Wang"
+aka = ["Edward Wang"]  # name on the sign-up form
+title = "AI Oral Assessment System"
+time = "12:45"
+summary = """
+Dr. Wang built a custom AI-powered oral assessment tool that conducts structured voice interviews \
+with students using an instructor-defined question bank and rubric — designed to restore authentic \
+knowledge verification in an era where written reflections and paper summaries are trivially \
+AI-generated."""
+
+  [[talks.links]]
+  label = "vivavoce.vercel.app"
+  url = "https://vivavoce.vercel.app/"
+
+  [[talks.links]]
+  label = "video"
+  file = "2026-04-07 Show and Tell/Edward WangAI Oral Assessment System.mov"
+  drive_id = "1ly4ZC3-0YSLikLfpVFxYDII5FQacQsDb"

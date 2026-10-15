@@ -1,0 +1,16 @@
+# Series-wide settings. Per-meeting data lives in sessions/*.toml.
+
+title = "Jacobs School of Engineering AI Show and Tell"
+contact_email = "sjswanson@ucsd.edu"
+signup_form = "https://forms.gle/RETySsGZ1JbX4QbQ9"
+tech_support = "Mauricio Villasenor"
+default_location = "CSE Building, Room 1242"
+
+# Videos, slides, recordings and transcripts stay in Google Drive.
+# Paths in sessions/*.toml (`file = ...`) are relative to this folder.
+drive_root = "~/Library/CloudStorage/GoogleDrive-sjswanson@ucsd.edu/Shared drives/Chair Swanson/JSOE AI Show and Tell"
+drive_folder_url = "https://drive.google.com/drive/folders/1l3ryxssGB9ZuWXnhJLVxIasrqIqiaQf3"
+
+# Sign-up Google Form and its responses sheet (both live in drive_root).
+form_edit_url = "https://docs.google.com/forms/d/1yz12usgNrLri3D0_X7mcPBFAN9sQiO6D732QhI2xO_Q/edit"
+responses_sheet_url = "https://docs.google.com/spreadsheets/d/1hBRj95q48pL--pVziPfaTyI_dj0lmvEeeis0z8FyFRM/edit"

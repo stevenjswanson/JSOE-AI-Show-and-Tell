@@ -1,0 +1,96 @@
+date = 2026-05-26
+drive_folder = "2026-05-26 Show and Tell"
+
+# Full Zoom recording; per-talk clips were cut from it.
+[recording]
+video = "2026-05-26 Show and Tell/GMT20260526-184554_Recording_2056x1330.mp4"
+transcript = "2026-05-26 Show and Tell/GMT20260526-184554_Recording.transcript.vtt"
+chat = "2026-05-26 Show and Tell/GMT20260526-184554_RecordingnewChat.txt"
+
+[[talks]]
+presenter = "Niema Moshiri"
+title = "A Flexible PyTest-to-PrairieLearn Code Auto-Grading Translation Layer"
+time = "12:05"
+summary = """
+Dr. Moshiri presented a PyTest-to-PrairieLearn translation layer that makes it easy to author and \
+deploy code auto-graders on PrairieLearn without rewriting grading logic from scratch. The layer \
+consists of a Python parser that converts PyTest output into PrairieLearn’s required format and a \
+companion shell script, demonstrated across three courses with custom Docker containers. Once \
+graders are written, they enable fully automated, proctored, randomized coding exams at the Triton \
+Testing Center, shifting course staff effort from grading toward improving grader quality and \
+student engagement."""
+
+  [[talks.links]]
+  label = "video"
+  file = "2026-05-26 Show and Tell/01_Niema_Moshiri.mp4"
+  drive_id = "1Bwgj6tWoYdCz4kXhUziyGb4GgUcIxhfI"
+
+[[talks]]
+presenter = "Rose Yu"
+title = "Using AI in a Research Group"
+time = "12:15"
+summary = """
+Dr. Yu described a RAG-based Slack chatbot her lab built to reduce the repetitive informational \
+burden of running a large research group of roughly 32 students. The bot indexes the lab’s GitHub \
+wiki — containing onboarding documents, policy guidelines, server usage instructions, and other \
+group knowledge — converts content into vector embeddings, and answers student questions directly \
+in Slack around the clock. It can also query live GPU and TPU cluster status, helping students \
+optimize experiment scheduling near deadlines with essentially zero ongoing maintenance."""
+
+  [[talks.links]]
+  label = "video"
+  file = "2026-05-26 Show and Tell/02_Rose_Yu.mp4"
+  drive_id = "1L6H_a0-77ckhOj27MprW7EJ2YdJ-mpCc"
+
+[[talks]]
+presenter = "Reem Khojah"
+title = "PrePostClass: An In-Class Formative Assessment Platform"
+time = "12:25"
+summary = """
+Dr. Khojah demonstrated PrePostClass, a web app for in-class formative assessment that administers \
+short pre- and post-lecture quizzes to measure learning gains within a single class session. The \
+tool uses LLMs to generate questions from uploaded lecture materials with a non-binary grading \
+scheme that distinguishes guessing from genuine understanding, and integrates directly with Canvas \
+for grade passback. Response data exports by Bloom’s taxonomy level, and participation scores \
+correlated with final exam performance better than homework grades."""
+
+  [[talks.links]]
+  label = "video"
+  file = "2026-05-26 Show and Tell/03_Reem_Khojah.mp4"
+  drive_id = "1P0tWM86i1MSX_nQ3pVcQsbjZiV5mQnws"
+
+[[talks]]
+presenter = "Nadir Weibel"
+time = "12:35"
+title = "Design Lab Faculty Intelligence"
+summary = """
+Dr. Weibel presented three interconnected tools built to automatically track and surface the \
+activities of the Design Lab’s 50+ faculty across 20 departments without requiring faculty to \
+self-report. A monthly pipeline scrapes and verifies faculty profiles from public sources, feeds a \
+highlights digest for the lab newsletter, and powers a Synergies Finder that matches incoming \
+opportunities — RFPs, funding calls, delegation visits — against the faculty database to rank the \
+most relevant faculty. He demonstrated the system against a Singapore University delegation visit \
+and an NSF grant opportunity."""
+
+  [[talks.links]]
+  label = "video"
+  file = "2026-05-26 Show and Tell/04_Nadir_Weibel.mp4"
+  drive_id = "1B6Mq06vG-zDfSs2Sm6055iYUxU2n42CS"
+
+[[talks]]
+presenter = "Steven Swanson"
+time = "12:45"
+title = "Automating Tedious Web Tasks"
+summary = """
+Prof. Swanson described using Claude Code to build locally-running Chrome extensions that scrape \
+data from university internal websites without sending screenshots or page content to the cloud. He \
+demonstrated a tool for UCSD’s SETS course evaluation system that reverse-engineers the site’s \
+internal API calls and provides a simple interface for querying evaluations by department, course, \
+or faculty name and downloading results as a spreadsheet. The approach generalizes quickly to other \
+internal university sites, though it requires some care to avoid inadvertently overloading backend \
+APIs."""
+
+  [[talks.links]]
+  label = "video"
+  file = "2026-05-26 Show and Tell/05_Steven_Swanson.mp4"
+  drive_id = "14G1VBHN-IdAgmzl2CdEGEcg-c84l50PN"
