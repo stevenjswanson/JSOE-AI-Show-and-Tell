@@ -77,7 +77,6 @@ def build():
     template = Template((REPO / "templates" / "page.html").read_text())
     return template.substitute(
         title=esc(config["title"]),
-        signup_form=esc(config["signup_form"]),
         contact_email=esc(config["contact_email"]),
         tech_support=esc(config["tech_support"]),
         sessions="\n\n".join(render_session(s, config) for s in sessions),

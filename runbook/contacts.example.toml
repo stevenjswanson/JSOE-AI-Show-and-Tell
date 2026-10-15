@@ -1,0 +1,25 @@
+# Copy to runbook/contacts.toml (gitignored) and fill in. Addresses of individuals stay out of
+# the public repo; the lists below are institutional and fine to keep here.
+
+organizer = "sjswanson@ucsd.edu"
+agent_copy = "sjswanson+claude@ucsd.edu"  # Cc on every email about the series
+operations = "m1villasenor@ucsd.edu"      # room, Zoom, lunch, calendar invite, reminders
+zoom_owner = "ucsd_cse-events"
+
+[lists]
+broadcast = ["jsoe-allacademic-g@ucsd.edu", "jsoe-ai-show-and-tell-g@ucsd.edu"]
+all_academic = "jsoe-allacademic-g@ucsd.edu"
+series_group = "jsoe-ai-show-and-tell-g@ucsd.edu"
+
+# Steering group, 2 reps + chair per department: default audience for the calendar invite.
+[[reps]]
+dept = "MAE"
+chair = "chair@ucsd.edu"
+members = ["rep1@ucsd.edu", "rep2@ucsd.edu"]
+# ... ECE, SE, BENG, CNE, CSE
+
+[candidates]
+# key = { name = "", dept = "", topic = "", note = "" }
+
+[other]
+extra_advertising_ideas = []

@@ -3,3 +3,6 @@ __pycache__/
 *.csv
 *.mp4
 *.mov
+email-archive/
+runbook/contacts.toml
+runbook/instances/

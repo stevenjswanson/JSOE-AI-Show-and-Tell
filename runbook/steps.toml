@@ -1,0 +1,135 @@
+# Planning steps for one show-and-tell instance, relative to event day E (a Tuesday).
+# `open` / `due` are day offsets: negative = before the event, positive = after.
+# A step is "open" from E+open, "due" by E+due, "overdue" after that. `scripts/runbook.py status`
+# reads this file; RUNBOOK.md explains what each step involves. Keep ids stable: state files use them.
+
+[[step]]
+id = "s00_choose_date"
+open = -70
+due = -42
+owner = "steve"
+title = "Pick the date and open the instance"
+
+[[step]]
+id = "s01_booking_request"
+open = -42
+due = -38
+owner = "ai+steve"
+title = "Draft booking request to Mauricio (room, Zoom, lunch, invite)"
+template = "01_booking_request.md"
+
+[[step]]
+id = "s02_booking_confirmed"
+open = -38
+due = -30
+owner = "ai"
+title = "Verify room and Zoom; create the calendar event"
+template = "02_booking_nudge.md"
+
+[[step]]
+id = "s03_cfp"
+open = -35
+due = -28
+owner = "ai+steve"
+title = "Draft call for presenters (broadcast to JSOE academics)"
+template = "03_cfp.md"
+
+[[step]]
+id = "s04_recruit"
+open = -35
+due = -17
+owner = "ai+steve"
+title = "Build the presenter pipeline; draft direct-recruiting emails"
+template = "04_recruit.md"
+
+[[step]]
+id = "s05_cfp_reminder"
+open = -24
+due = -20
+owner = "ai+steve"
+title = "Draft CFP reminder if fewer than 5 presenters are confirmed"
+template = "05_cfp_reminder.md"
+
+[[step]]
+id = "s06_lineup"
+open = -19
+due = -16
+owner = "ai+steve"
+title = "Propose the lineup and time slots for Steve's approval"
+
+[[step]]
+id = "s07_confirm_presenters"
+open = -16
+due = -14
+owner = "ai+steve"
+title = "Draft confirmation, release and overflow emails; wait 3 days for declines"
+template = "07_schedule_confirmation.md"
+
+[[step]]
+id = "s08_site_lineup"
+open = -11
+due = -9
+owner = "ai+steve"
+title = "Create sessions/E.toml with the lineup, build the site, push with OK"
+
+[[step]]
+id = "s09_announcement"
+open = -8
+due = -6
+owner = "ai+steve"
+title = "Draft the all-faculty announcement (schedule, RSVP, Zoom, lunch)"
+template = "09_announcement.md"
+
+[[step]]
+id = "s10_presenter_logistics"
+open = -5
+due = -3
+owner = "ai+steve"
+title = "Draft presenter logistics email (slides, timing, Zoom test)"
+template = "10_presenter_logistics.md"
+
+[[step]]
+id = "s11_lunch_count"
+open = -4
+due = -3
+owner = "ai+steve"
+title = "Draft headcount + dietary summary for Mauricio from the RSVP tally"
+template = "11_lunch_count.md"
+
+[[step]]
+id = "s12_day_before_reminder"
+open = -1
+due = -1
+owner = "ai+steve"
+title = "Draft day-before reminder and STARTING NOW (schedule-send)"
+template = "12_day_before_reminder.md"
+
+[[step]]
+id = "s13_day_of"
+open = 0
+due = 0
+owner = "ai+steve"
+title = "Same-day thanks to presenters; note what happened"
+template = "13_starting_now.md"
+
+[[step]]
+id = "s14_recording"
+open = 0
+due = 3
+owner = "ai+steve"
+title = "Get the Zoom recording, transcript and chat into the Drive folder"
+
+[[step]]
+id = "s15_materials_online"
+open = 1
+due = 7
+owner = "ai+steve"
+title = "Clips, summaries, slides on the site; draft thanks + materials email"
+template = "15_thanks_materials.md"
+
+[[step]]
+id = "s16_wrapup"
+open = 7
+due = 21
+owner = "ai+steve"
+title = "Chase slides, record overflow and feedback, propose next date, close"

@@ -8,12 +8,12 @@ administration.
 - **Media:** videos, slides, recordings, transcripts and chat logs stay in the shared Google Drive
   folder [JSOE AI Show and Tell](https://drive.google.com/drive/folders/1l3ryxssGB9ZuWXnhJLVxIasrqIqiaQf3),
   one subfolder per meeting. This repo only stores paths and Drive IDs.
-- **Sign-ups:** the Google Form and its Responses sheet in that Drive folder (links in `config.toml`).
+- **Sign-ups and RSVPs:** by email reply to the call/announcement (see `runbook/`); the 2026 Google Form is retired.
 
 ## Layout
 
 ```
-config.toml            series-wide settings: title, contact, form link, Drive location
+config.toml            series-wide settings: title, contact, Drive location
 sessions/YYYY-MM-DD.toml   one file per meeting: talks, summaries, links, recording
 templates/page.html    page shell (CSS, intro text); $placeholders filled by build.py
 index.html             GENERATED: do not edit by hand
@@ -21,7 +21,7 @@ scripts/
   build.py             sessions + template -> index.html  (--check to verify it's current)
   check_media.py       verify every `file`/`drive_id` against the synced Drive folder
   split_recording.py   cut a full recording into NN_First_Last.mp4 clips in Drive
-  responses.py         summarize form responses: RSVPs, dietary needs, unscheduled demos
+  runbook.py           planning steps, status data and action log for one meeting
 ```
 
 Everything is Python 3.11+ standard library; `split_recording.py` also needs `ffmpeg`.
@@ -41,8 +41,8 @@ transcript = "2026-05-26 Show and Tell/GMT..._Recording.transcript.vtt"
 
 [[talks]]
 presenter = "Rose Yu"
-# email = "..."   # optional; matches form responses. Repo is public, so usually omit
-aka = ["Rose Q. Yu"]                         # optional: other names used on the sign-up form
+# email = "..."   # optional. Repo is public, so usually omit
+aka = ["Rose Q. Yu"]                         # optional: other names the presenter goes by
 time = "12:15"                              # scheduled slot
 start = "26:30"                             # offset into the recording (for splitting)
 title = "Using AI in a Research Group"
@@ -61,11 +61,20 @@ summary = """..."""                         # plain text; curly quotes/dashes ar
 Talks appear on the page in file order; sessions in date order. A session with no
 talks shows "Speakers to be announced."
 
+## Planning a meeting
+
+`runbook/RUNBOOK.md` is a day-by-day procedure (written for an AI agent on a daily
+schedule) that covers booking, the call for presenters, recruiting, the announcement,
+lunch count, reminders, recording and the post-event write-up. It produces email drafts
+for Steve to send; it never sends anything itself. `python3 scripts/runbook.py status`
+shows what is due; step windows are in `runbook/steps.toml`, email wording in
+`runbook/templates/`. Per-instance state and drafts live in `runbook/instances/`
+(gitignored, like `runbook/contacts.toml`, because they name people).
+
 ## Running a meeting
 
-1. **Before:** download the Responses sheet as CSV and run
-   `python3 scripts/responses.py` to see RSVPs since the last meeting, dietary needs
-   for the food order, and demo proposals not yet scheduled. Pick the lineup and create
+1. **Before:** follow `runbook/RUNBOOK.md` (RSVPs and proposals arrive by email and are
+   tallied in `_data/status/YYYY-MM-DD.yml`). Pick the lineup and create
    `sessions/YYYY-MM-DD.toml` with presenters, titles and times. Run
    `python3 scripts/build.py` and push to announce the lineup.
 2. **After:** put the Zoom recording, transcript and chat in a new Drive folder
