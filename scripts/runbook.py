@@ -11,6 +11,8 @@ Usage:
   python3 scripts/runbook.py reopen YYYY-MM-DD STEP_ID
   python3 scripts/runbook.py log YYYY-MM-DD "drafted CFP"
         append one line to the status data's log (always the last key in the file)
+  python3 scripts/runbook.py window YYYY-MM-DD STEP_ID OPEN DUE [note...]
+        move one step's window for this instance (offsets in days from the event)
 
 With no date, `status` picks the active instance: the next upcoming event, or the most
 recent one while its wrap-up window (21 days) is open. Step definitions: runbook/steps.toml.
@@ -62,6 +64,9 @@ def save_state(day, state):
              "", "[threads]  # subject -> Gmail thread id, filled in when a draft is detected as sent"]
     for subj, tid in state.get("threads", {}).items():
         lines.append(f"{q(subj)} = {q(tid)}")
+    lines += ["", "[overrides]  # step id -> { open = N, due = N } for this instance only (e.g. holidays)"]
+    for sid, w in sorted(state.get("overrides", {}).items()):
+        lines.append(f"{sid} = {{ open = {w['open']}, due = {w['due']}, note = {q(w.get('note', ''))} }}")
     lines += ["", "[steps]"]
     for sid, info in sorted(state.get("steps", {}).items()):
         lines.append(f"{sid} = {{ done = {info['done']}, note = {q(info.get('note', ''))} }}")
@@ -135,8 +140,10 @@ def cmd_status(args):
         print(f"Extra recipients: {', '.join(state['extra_recipients'])}")
     print()
     done = state.get("steps", {})
+    overrides = state.get("overrides", {})
     for s in load_steps():
-        opens, due = day + timedelta(days=s["open"]), day + timedelta(days=s["due"])
+        w = overrides.get(s["id"], s)
+        opens, due = day + timedelta(days=w["open"]), day + timedelta(days=w["due"])
         if s["id"] in done:
             status = f"done {done[s['id']]['done']}"
         elif today < opens:
@@ -146,7 +153,8 @@ def cmd_status(args):
         else:
             status = f"OVERDUE   (was due {due}, {(today - due).days}d ago)"
         flag = "  " if status.startswith(("done", "upcoming")) else "->"
-        print(f"{flag} {s['id']:<24} {status:<40} {s['title']}")
+        print(f"{flag} {s['id']:<24} {status:<40} {s['title']}"
+              + ("  [window overridden]" if s["id"] in overrides else ""))
         if s["id"] in done and done[s["id"]].get("note"):
             print(f"{'':29}note: {done[s['id']]['note']}")
     drafts = sorted((instance_dir(day) / "drafts").glob("*.md"))
@@ -194,8 +202,20 @@ def cmd_log(args):
     print(f"logged: {action}")
 
 
+def cmd_window(args):
+    day = date.fromisoformat(args[0])
+    sid, o, d = args[1], int(args[2]), int(args[3])
+    if sid not in {s["id"] for s in load_steps()}:
+        sys.exit(f"unknown step {sid}")
+    state = load_state(day)
+    state.setdefault("overrides", {})[sid] = {"open": o, "due": d, "note": " ".join(args[4:])}
+    save_state(day, state)
+    print(f"{sid} window: opens {day + timedelta(days=o)}, due {day + timedelta(days=d)}")
+
+
 if __name__ == "__main__":
-    cmds = {"new": cmd_new, "status": cmd_status, "done": cmd_done, "reopen": cmd_reopen, "log": cmd_log}
+    cmds = {"new": cmd_new, "status": cmd_status, "done": cmd_done, "reopen": cmd_reopen,
+            "log": cmd_log, "window": cmd_window}
     if len(sys.argv) < 2 or sys.argv[1] not in cmds:
         sys.exit(__doc__)
     cmds[sys.argv[1]](sys.argv[2:])

@@ -82,7 +82,9 @@ nothing and post nothing.
    if he had typed it in chat ("approve the lineup", "add X to recruiting", "date moves to
    …", "03 and 04 sent", "skip the reminder"). Do what it asks within the guardrails below;
    if it is ambiguous or would break a guardrail, ask back in the thread instead of
-   guessing. Record each in `notes.md` → *Decisions*, log `Slack instruction`, and update
+   guessing. Steve may answer in the thread or in a new top-level message, often by number
+   ("2) …", "3) No"); match numbers to the latest brief. A changed date for a step →
+   `python3 scripts/runbook.py window <E> <step> <open> <due> <note>`. Record each in `notes.md` → *Decisions*, log `Slack instruction`, and update
    `last_slack_read`. If Slack is unreachable, say so in the brief and carry on.
 2. **Gather inputs** (read-only):
    - **Correspondence**: Gmail search `(to:sjswanson+claude@ucsd.edu OR cc:sjswanson+claude@ucsd.edu OR deliveredto:sjswanson+claude@ucsd.edu) newer_than:3d`,
