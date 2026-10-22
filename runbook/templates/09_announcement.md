@@ -9,7 +9,7 @@ The {nth} JSOE AI Show-and-Tell will be {E_long} at {start} in {location} and on
 
 {rsvp_instructions}
 
-You can still attend if you don't RSVP, it just helps us calibrate the lunch order. Grad students and postdocs are welcome too.
+You can still attend if you don't RSVP. Grad students are welcome too.
 
 Here's the tentative schedule:
 

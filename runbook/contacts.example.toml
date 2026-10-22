@@ -5,8 +5,9 @@ organizer = "sjswanson@ucsd.edu"
 agent_copy = "sjswanson+claude@ucsd.edu"  # Cc on every email about the series
 operations = "m1villasenor@ucsd.edu"      # room, Zoom, lunch, calendar invite, reminders
 zoom_owner = "ucsd_cse-events"
-slack_channel = ""                        # private channel for briefs and Steve's instructions (name or ID)
-slack_steve_id = ""                       # Steve's Slack user ID; only his messages are instructions
+slack_channel = ""                        # private channel for briefs and Steve's instructions
+slack_channel_id = ""
+slack_steve_id = ""                       # Steve's Slack user ID; the agent also posts as this user, prefixed [agent]
 
 [lists]
 broadcast = ["jsoe-allacademic-g@ucsd.edu", "jsoe-ai-show-and-tell-g@ucsd.edu"]
@@ -24,4 +25,3 @@ members = ["rep1@ucsd.edu", "rep2@ucsd.edu"]
 # key = { name = "", dept = "", topic = "", note = "" }
 
 [other]
-extra_advertising_ideas = []

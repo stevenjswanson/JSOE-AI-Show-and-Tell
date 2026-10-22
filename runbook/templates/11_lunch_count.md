@@ -11,8 +11,6 @@ In person: {n_in_person}, plus {n_presenters_in_person} presenters
 Zoom: {n_zoom}
 Dietary restrictions: {dietary_list, e.g. "2 vegetarian, 1 vegan, 1 gluten-free (names: ...)"}
 
-Last time we had walk-ins, so I'd order for about {n_order} to be safe.
-
 Thanks!
 
 -steve
