@@ -7,9 +7,7 @@ event:
 phase: planning
 needs_steve:
   - "Forward or paste the Zoom details when Mauricio sends them."
-  - "You have NVSL Lunch 12-1 on Dec 2: move or skip it."
-  - "Anyone else to include in advertising (beyond jsoe-allacademic-g and the series group)?"
-  - "Thanksgiving week (Nov 23-27) hits the announcement window: OK to send the announcement Mon Nov 23?"
+  - "Confirm: delete the Dec 2 NVSL Lunch from the NVSL calendar? (attendees may be notified)"
 lineup: []
 proposals: []
 rsvps: []
@@ -25,3 +23,5 @@ log:
   - {date: 2026-10-22, action: "booking sent via Chat"}
   - {date: 2026-10-22, action: "room confirmed"}
   - {date: 2026-10-22, action: "food, Zoom requested"}
+  - {date: 2026-10-22, action: "Slack instructions"}
+  - {date: 2026-10-22, action: "dates set"}
