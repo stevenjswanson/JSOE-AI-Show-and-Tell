@@ -124,7 +124,7 @@ id = "s15_materials_online"
 open = 1
 due = 7
 owner = "ai+steve"
-title = "Clips, summaries, slides on the site; draft thanks + materials email"
+title = "Cut clips with OctoEdit; summaries and slides on the site; draft thanks + materials email"
 template = "15_thanks_materials.md"
 
 [[step]]

@@ -1,0 +1,117 @@
+---
+# Unlinked planning status page. Data: _data/status/<event date>.yml, kept current by the
+# runbook's daily task. Public but not linked from the main page and not indexed.
+sitemap: false
+---
+{%- assign instances = site.data.status | sort -%}
+{%- assign current = instances | last -%}
+{%- assign s = current[1] -%}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Show-and-Tell planning status</title>
+<style>
+  :root { --navy: #182B49; --gold: #C69214; --ink: #1f1f1f; --muted: #5b6470; --rule: #e3e6ea; --warn: #8a5a00; --warnbg: #fff6e0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         color: var(--ink); max-width: 860px; margin: 2rem auto; padding: 0 1rem 4rem; line-height: 1.5; }
+  h1 { font-size: 1.5rem; color: var(--navy); border-bottom: 3px solid var(--gold); padding-bottom: 0.4rem; margin: 0 0 0.75rem; }
+  h2 { font-size: 1.1rem; color: var(--navy); margin: 2rem 0 0.6rem; border-bottom: 1px solid var(--rule); padding-bottom: 0.2rem; }
+  .meta { color: var(--muted); margin: 0.2rem 0; }
+  .phase { display: inline-block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;
+           background: var(--navy); color: #fff; border-radius: 3px; padding: 0.05rem 0.45rem; }
+  .needs { background: var(--warnbg); border-left: 4px solid var(--gold); padding: 0.6rem 0.9rem; }
+  .needs ul { margin: 0; padding-left: 1.2rem; }
+  .counts { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.5rem 0 0.8rem; }
+  .count { border: 1px solid var(--rule); border-radius: 4px; padding: 0.35rem 0.7rem; min-width: 6rem; }
+  .count b { display: block; font-size: 1.3rem; color: var(--navy); }
+  .count span { font-size: 0.8rem; color: var(--muted); }
+  .scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
+  th, td { text-align: left; padding: 0.35rem 0.5rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.03em; }
+  td.nowrap { white-space: nowrap; }
+  .empty { color: var(--muted); font-style: italic; }
+  .log td { padding: 0.15rem 0.5rem; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+
+<h1>Show-and-Tell planning status</h1>
+
+{%- if s == nil %}
+<p class="empty">No planning in progress.</p>
+{%- else %}
+<p class="meta"><strong>{{ s.event.date | date: "%A, %B %-d, %Y" }}</strong>, {{ s.event.start }}&ndash;{{ s.event.end }}, {{ s.event.location }}{% if s.event.zoom != "" and s.event.zoom %} &middot; <a href="{{ s.event.zoom }}">Zoom</a>{% endif %}</p>
+<p class="meta"><span class="phase">{{ s.phase }}</span>{% assign last = s.log | last %}{% if last %} &middot; updated {{ last.date | date: "%b %-d" }}{% endif %}</p>
+
+<h2>Needs Steve</h2>
+{%- if s.needs_steve and s.needs_steve.size > 0 %}
+<div class="needs"><ul>
+{%- for n in s.needs_steve %}
+  <li>{{ n }}</li>
+{%- endfor %}
+</ul></div>
+{%- else %}
+<p class="empty">Nothing right now.</p>
+{%- endif %}
+
+<h2>Lineup</h2>
+{%- if s.lineup and s.lineup.size > 0 %}
+<div class="scroll"><table>
+  <tr><th>Time</th><th>Presenter</th><th>Title</th><th>Status</th></tr>
+{%- for t in s.lineup %}
+  <tr><td class="nowrap">{{ t.time }}</td><td>{{ t.presenter }}</td><td>{{ t.title }}</td><td>{{ t.status }}</td></tr>
+{%- endfor %}
+</table></div>
+{%- else %}
+<p class="empty">Not set yet.</p>
+{%- endif %}
+
+<h2>Proposed topics</h2>
+{%- if s.proposals and s.proposals.size > 0 %}
+<div class="scroll"><table>
+  <tr><th>Name</th><th>Dept</th><th>Topic</th><th>Status</th><th>Received</th></tr>
+{%- for p in s.proposals %}
+  <tr><td>{{ p.name }}</td><td>{{ p.dept }}</td><td>{{ p.topic }}</td><td>{{ p.status }}</td><td class="nowrap">{{ p.received | date: "%b %-d" }}</td></tr>
+{%- endfor %}
+</table></div>
+{%- else %}
+<p class="empty">None yet.</p>
+{%- endif %}
+
+<h2>RSVPs</h2>
+<div class="counts">
+  <div class="count"><b>{{ s.counts.in_person | default: 0 }}</b><span>in person</span></div>
+  <div class="count"><b>{{ s.counts.zoom | default: 0 }}</b><span>Zoom</span></div>
+  <div class="count"><b>{{ s.counts.presenters | default: 0 }}</b><span>presenters</span></div>
+  <div class="count"><b>{{ s.counts.dietary_notes | default: 0 }}</b><span>dietary notes</span></div>
+</div>
+{%- if s.rsvps and s.rsvps.size > 0 %}
+<div class="scroll"><table>
+  <tr><th>Name</th><th>Dept</th><th>Mode</th><th>Received</th></tr>
+{%- for r in s.rsvps %}
+  <tr><td>{{ r.name }}</td><td>{{ r.dept }}</td><td>{{ r.mode }}</td><td class="nowrap">{{ r.received | date: "%b %-d" }}</td></tr>
+{%- endfor %}
+</table></div>
+{%- else %}
+<p class="empty">None yet.</p>
+{%- endif %}
+
+<h2>Log</h2>
+{%- if s.log and s.log.size > 0 %}
+<div class="scroll"><table class="log">
+{%- for e in s.log %}
+  <tr><td class="nowrap">{{ e.date | date: "%b %-d" }}</td><td>{{ e.action }}</td></tr>
+{%- endfor %}
+</table></div>
+{%- else %}
+<p class="empty">Nothing logged.</p>
+{%- endif %}
+{%- endif %}
+
+</body>
+</html>

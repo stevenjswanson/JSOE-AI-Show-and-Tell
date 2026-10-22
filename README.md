@@ -17,10 +17,14 @@ config.toml            series-wide settings: title, contact, Drive location
 sessions/YYYY-MM-DD.toml   one file per meeting: talks, summaries, links, recording
 templates/page.html    page shell (CSS, intro text); $placeholders filled by build.py
 index.html             GENERATED: do not edit by hand
+_config.yml            Jekyll settings (GitHub Pages copies index.html as is, renders status/)
+status/index.html      unlinked planning status page, rendered from _data/status/*.yml
+_data/status/          per-meeting planning status + action log (written by the runbook agent)
+runbook/               planning runbook, step windows, email templates
 scripts/
   build.py             sessions + template -> index.html  (--check to verify it's current)
   check_media.py       verify every `file`/`drive_id` against the synced Drive folder
-  split_recording.py   cut a full recording into NN_First_Last.mp4 clips in Drive
+  split_recording.py   fallback: cut a full recording into clips with ffmpeg (OctoEdit is the default; see runbook s15)
   runbook.py           planning steps, status data and action log for one meeting
 ```
 
@@ -78,9 +82,10 @@ shows what is due; step windows are in `runbook/steps.toml`, email wording in
    `sessions/YYYY-MM-DD.toml` with presenters, titles and times. Run
    `python3 scripts/build.py` and push to announce the lineup.
 2. **After:** put the Zoom recording, transcript and chat in a new Drive folder
-   `YYYY-MM-DD Show and Tell/` and list them under `[recording]`. Add a `start` to
-   each talk (the transcript's timestamps help), then
-   `python3 scripts/split_recording.py YYYY-MM-DD` (try `--dry-run` first).
+   `YYYY-MM-DD Show and Tell/` and list them under `[recording]`. Cut one clip per talk
+   with OctoEdit (`runbook/RUNBOOK.md` step s15: `octoedit init`, mark clips in
+   `transcript.md`, `octoedit render --dest <Drive folder>`). Fallback: add a `start` to
+   each talk and run `python3 scripts/split_recording.py YYYY-MM-DD` (try `--dry-run` first).
 3. Once Drive has synced the clips, add a `video` link with `file = ...` to each talk,
    run `python3 scripts/check_media.py`, and paste in the `drive_id` values it prints.
    Make sure the clips are shared so UCSD (or anyone with the link) can view them.

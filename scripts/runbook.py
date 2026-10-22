@@ -58,6 +58,7 @@ def save_state(day, state):
              f"end = {q(state['end'])}",
              f"location = {q(state['location'])}",
              f"extra_recipients = {state.get('extra_recipients', [])!r}".replace("'", '"'),
+             f"last_slack_read = {q(state.get('last_slack_read', ''))}  # Slack ts of the newest message already handled",
              "", "[threads]  # subject -> Gmail thread id, filled in when a draft is detected as sent"]
     for subj, tid in state.get("threads", {}).items():
         lines.append(f"{q(subj)} = {q(tid)}")

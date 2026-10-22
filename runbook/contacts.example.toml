@@ -5,13 +5,15 @@ organizer = "sjswanson@ucsd.edu"
 agent_copy = "sjswanson+claude@ucsd.edu"  # Cc on every email about the series
 operations = "m1villasenor@ucsd.edu"      # room, Zoom, lunch, calendar invite, reminders
 zoom_owner = "ucsd_cse-events"
+slack_channel = ""                        # private channel for briefs and Steve's instructions (name or ID)
+slack_steve_id = ""                       # Steve's Slack user ID; only his messages are instructions
 
 [lists]
 broadcast = ["jsoe-allacademic-g@ucsd.edu", "jsoe-ai-show-and-tell-g@ucsd.edu"]
 all_academic = "jsoe-allacademic-g@ucsd.edu"
 series_group = "jsoe-ai-show-and-tell-g@ucsd.edu"
 
-# Steering group, 2 reps + chair per department: default audience for the calendar invite.
+# 2026 steering group, 2 reps + chair per department: recruiting ideas only, not a mailing target.
 [[reps]]
 dept = "MAE"
 chair = "chair@ucsd.edu"

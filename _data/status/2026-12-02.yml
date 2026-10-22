@@ -1,0 +1,16 @@
+event:
+  date: 2026-12-02
+  start: "12:00"
+  end: "13:30"
+  location: "CSE Building, Room 1242"
+  zoom: ""
+phase: planning
+needs_steve: []
+lineup: []
+proposals: []
+rsvps: []
+counts: {in_person: 0, zoom: 0, presenters: 0, dietary_notes: 0}
+log:
+  - {date: 2026-10-22, action: "instance opened"}
+  - {date: 2026-10-22, action: "date set"}
+  - {date: 2026-10-22, action: "room booked"}

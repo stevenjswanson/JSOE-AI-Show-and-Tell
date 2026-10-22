@@ -1,7 +1,7 @@
 # Email templates
 
 One file per email the runbook produces. The wording is Steve's from the spring 2026
-instances, lightly generalized; every `{placeholder}` must be filled before a draft is `ready`.
+instances, lightly generalized; every `{placeholder}` must be filled before the Gmail draft is created.
 Every draft carries `cc: sjswanson+claude@ucsd.edu` (plus anyone named in the template).
 
 Placeholders: `{E_long}` = "Tuesday, January 12", `{E_short}` = "January 12th",
