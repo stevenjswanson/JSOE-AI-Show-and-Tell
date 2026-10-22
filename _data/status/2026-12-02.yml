@@ -7,7 +7,6 @@ event:
 phase: planning
 needs_steve:
   - "Forward or paste the Zoom details when Mauricio sends them."
-  - "Confirm: delete the Dec 2 NVSL Lunch from the NVSL calendar? (attendees may be notified)"
 lineup: []
 proposals: []
 rsvps: []
@@ -25,3 +24,4 @@ log:
   - {date: 2026-10-22, action: "food, Zoom requested"}
   - {date: 2026-10-22, action: "Slack instructions"}
   - {date: 2026-10-22, action: "dates set"}
+  - {date: 2026-10-22, action: "NVSL lunch removed"}

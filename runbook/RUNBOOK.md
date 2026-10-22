@@ -83,7 +83,13 @@ nothing and post nothing.
    …", "03 and 04 sent", "skip the reminder"). Do what it asks within the guardrails below;
    if it is ambiguous or would break a guardrail, ask back in the thread instead of
    guessing. Steve may answer in the thread or in a new top-level message, often by number
-   ("2) …", "3) No"); match numbers to the latest brief. A changed date for a step →
+   ("2) …", "3) No"); match numbers to the latest brief.
+   **Confirmations go through Slack.** When an instruction needs an action outside the
+   guardrails (e.g. deleting an event on another calendar), don't do it on the first ask:
+   reply in the thread with exactly what will happen and who is affected, ending
+   `Reply "N: yes" to confirm`. Only a later `N: yes` (or "yes" in that thread) from Steve
+   authorizes it, for exactly that action, once. Then do it and confirm in the thread.
+   A changed date for a step →
    `python3 scripts/runbook.py window <E> <step> <open> <due> <note>`. Record each in `notes.md` → *Decisions*, log `Slack instruction`, and update
    `last_slack_read`. If Slack is unreachable, say so in the brief and carry on.
 2. **Gather inputs** (read-only):
