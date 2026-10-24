@@ -9,3 +9,4 @@ runbook/instances/
 _site/
 .jekyll-cache/
 .sass-cache/
+.claude/settings.local.json
