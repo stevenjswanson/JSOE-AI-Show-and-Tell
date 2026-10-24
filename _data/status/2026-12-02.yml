@@ -25,3 +25,5 @@ log:
   - {date: 2026-10-22, action: "Slack instructions"}
   - {date: 2026-10-22, action: "dates set"}
   - {date: 2026-10-22, action: "NVSL lunch removed"}
+  - {date: 2026-10-23, action: "Slack instruction"}
+  - {date: 2026-10-23, action: "Zoom not in event"}
