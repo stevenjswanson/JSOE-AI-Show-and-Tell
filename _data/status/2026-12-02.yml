@@ -6,7 +6,7 @@ event:
   zoom: ""
 phase: planning
 needs_steve:
-  - "Forward or paste the Zoom details when Mauricio sends them."
+  - "Send the Zoom check-in to Mauricio (in your Gmail Drafts), or forward/paste the Zoom details if you already have them."
 lineup: []
 proposals: []
 rsvps: []
@@ -27,3 +27,4 @@ log:
   - {date: 2026-10-22, action: "NVSL lunch removed"}
   - {date: 2026-10-23, action: "Slack instruction"}
   - {date: 2026-10-23, action: "Zoom not in event"}
+  - {date: 2026-10-26, action: "drafted booking nudge"}
