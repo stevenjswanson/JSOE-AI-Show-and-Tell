@@ -6,8 +6,7 @@ event:
   zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
 phase: planning
 needs_steve:
-  - "Send the call for presenters (in your Gmail Drafts)"
-  - "Send the recruiting emails to Robert Heath and Alex Phan (in your Gmail Drafts)"
+  - "Anyone else to ask directly to present?"
 lineup: []
 proposals:
   - {name: "Robert Heath", dept: "ECE", topic: "AI workflow for reviewing/writing papers", status: proposed}
@@ -38,3 +37,5 @@ log:
   - {date: 2026-10-28, action: "drafted CFP"}
   - {date: 2026-10-28, action: "Slack instruction"}
   - {date: 2026-10-28, action: "drafted recruiting emails"}
+  - {date: 2026-10-28, action: "sent CFP"}
+  - {date: 2026-10-28, action: "sent recruiting emails"}
