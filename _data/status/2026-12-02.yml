@@ -3,10 +3,9 @@ event:
   start: "12:00"
   end: "13:30"
   location: "CSE Building, Room 1242"
-  zoom: ""
+  zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
 phase: planning
-needs_steve:
-  - "Zoom join link (it includes the passcode) on this public status page: yes or no?"
+needs_steve: []
 lineup: []
 proposals: []
 rsvps: []
@@ -31,3 +30,4 @@ log:
   - {date: 2026-10-26, action: "sent booking nudge"}
   - {date: 2026-10-27, action: "Zoom received"}
   - {date: 2026-10-27, action: "calendar event updated"}
+  - {date: 2026-10-27, action: "Zoom link posted"}
