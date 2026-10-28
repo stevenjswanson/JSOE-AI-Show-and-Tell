@@ -5,7 +5,9 @@ event:
   location: "CSE Building, Room 1242"
   zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
 phase: planning
-needs_steve: []
+needs_steve:
+  - "Send the call for presenters (in your Gmail Drafts)"
+  - "Recruiting emails to Robert Heath (ECE) and Alex Phan (CNE)?"
 lineup: []
 proposals: []
 rsvps: []
@@ -31,3 +33,4 @@ log:
   - {date: 2026-10-27, action: "Zoom received"}
   - {date: 2026-10-27, action: "calendar event updated"}
   - {date: 2026-10-27, action: "Zoom link posted"}
+  - {date: 2026-10-28, action: "drafted CFP"}
