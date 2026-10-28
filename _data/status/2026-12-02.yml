@@ -7,9 +7,11 @@ event:
 phase: planning
 needs_steve:
   - "Send the call for presenters (in your Gmail Drafts)"
-  - "Recruiting emails to Robert Heath (ECE) and Alex Phan (CNE)?"
+  - "Send the recruiting emails to Robert Heath and Alex Phan (in your Gmail Drafts)"
 lineup: []
-proposals: []
+proposals:
+  - {name: "Robert Heath", dept: "ECE", topic: "AI workflow for reviewing/writing papers", status: proposed}
+  - {name: "Alex Phan", dept: "CNE", topic: "student AI-use surveys", status: proposed}
 rsvps: []
 counts: {in_person: 0, zoom: 0, presenters: 0, dietary_notes: 0}
 log:
@@ -34,3 +36,5 @@ log:
   - {date: 2026-10-27, action: "calendar event updated"}
   - {date: 2026-10-27, action: "Zoom link posted"}
   - {date: 2026-10-28, action: "drafted CFP"}
+  - {date: 2026-10-28, action: "Slack instruction"}
+  - {date: 2026-10-28, action: "drafted recruiting emails"}
