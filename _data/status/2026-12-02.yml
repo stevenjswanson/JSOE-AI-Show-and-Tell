@@ -5,7 +5,8 @@ event:
   location: "CSE Building, Room 1242"
   zoom: ""
 phase: planning
-needs_steve: []
+needs_steve:
+  - "Zoom join link (it includes the passcode) on this public status page: yes or no?"
 lineup: []
 proposals: []
 rsvps: []
@@ -28,3 +29,5 @@ log:
   - {date: 2026-10-23, action: "Zoom not in event"}
   - {date: 2026-10-26, action: "drafted booking nudge"}
   - {date: 2026-10-26, action: "sent booking nudge"}
+  - {date: 2026-10-27, action: "Zoom received"}
+  - {date: 2026-10-27, action: "calendar event updated"}
