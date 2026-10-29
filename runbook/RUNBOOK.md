@@ -294,7 +294,11 @@ Append a short retrospective to `notes.md`.
 
 **Every email is created as a real draft in Steve's Gmail Drafts folder** (Gmail
 `create_draft`, plain-text `body`, To/Cc/Bcc and subject filled in), ready for him to open
-and send. The agent never calls `send_message` or sends a draft. A local copy goes in
+and send. The agent never calls `send_message` or sends a draft. **Right after creating
+or updating a draft, label it `CB/📤`**: `label_message` with the draft's `messageId` (from
+the create/update result) and label ID `gmail_draft_label_id` in `contacts.toml`
+(`Label_4354534010819465475`; if that fails, look the label up by name with `list_labels`).
+`update_draft` returns a new `messageId`, so label again after every update. A local copy goes in
 `runbook/instances/<E>/drafts/NN_slug.md` as the record:
 
 ```

@@ -7,6 +7,8 @@ operations = "m1villasenor@ucsd.edu"      # room, Zoom, lunch, calendar invite, 
 zoom_owner = "ucsd_cse-events"
 slack_channel = ""                        # private channel for briefs and Steve's instructions
 slack_channel_id = ""
+gmail_draft_label = "CB/📤"
+gmail_draft_label_id = ""                 # from Gmail list_labels
 slack_steve_id = ""                       # Steve's Slack user ID; the agent also posts as this user, prefixed [agent]
 
 [lists]
