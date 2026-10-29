@@ -101,7 +101,11 @@ nothing and post nothing.
      For each new human reply classify it as: **RSVP** (in person / Zoom / regrets, dietary
      note), **proposal** (topic, dept), **presenter reply** (yes/no/constraint such as "I
      teach until 12:20" or "must leave at 12:45"), **question** (hybrid? grad students?
-     — answers: yes and yes; queue a one-line reply draft for Steve), or **logistics**
+     — answers: yes and yes; queue a one-line reply draft for Steve). **Everyone is
+     welcome**: anyone asking whether there's space or room, whether they can still come,
+     come late or bring someone, or whether they're eligible (staff, students, postdocs,
+     people outside JSOE) gets a short welcoming reply draft saying yes, they're welcome.
+     Count them as an RSVP if they say how they'll attend. Or **logistics**
      (Mauricio, Zoom, Drive). Record RSVPs and proposals in `_data/status/<E>.yml`, dietary
      details and anything personal in `notes.md` only, constraints in the pipeline table.
    - **Sent detection**: for each local draft with `status: drafted`, check whether its
