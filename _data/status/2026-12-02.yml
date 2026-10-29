@@ -11,8 +11,9 @@ lineup: []
 proposals:
   - {name: "Robert Heath", dept: "ECE", topic: "AI workflow for reviewing/writing papers", status: proposed}
   - {name: "Alex Phan", dept: "CNE", topic: "student AI-use surveys", status: proposed}
-rsvps: []
-counts: {in_person: 0, zoom: 0, presenters: 0, dietary_notes: 0}
+rsvps:
+  - {name: "Sarah Carvalho", dept: "Teaching + Learning Commons", mode: in person, received: 2026-10-28}
+counts: {in_person: 1, zoom: 0, presenters: 0, dietary_notes: 0}
 log:
   - {date: 2026-10-22, action: "instance opened"}
   - {date: 2026-10-22, action: "date set"}
@@ -39,3 +40,4 @@ log:
   - {date: 2026-10-28, action: "drafted recruiting emails"}
   - {date: 2026-10-28, action: "sent CFP"}
   - {date: 2026-10-28, action: "sent recruiting emails"}
+  - {date: 2026-10-28, action: "ingested RSVP"}
