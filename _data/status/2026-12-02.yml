@@ -5,8 +5,7 @@ event:
   location: "CSE Building, Room 1242"
   zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
 phase: planning
-needs_steve:
-  - "Anyone else to ask directly to present?"
+needs_steve: []
 lineup: []
 proposals:
   - {name: "Robert Heath", dept: "ECE", topic: "AI workflow for reviewing/writing papers", status: proposed}
@@ -41,3 +40,4 @@ log:
   - {date: 2026-10-28, action: "sent CFP"}
   - {date: 2026-10-28, action: "sent recruiting emails"}
   - {date: 2026-10-28, action: "ingested RSVP"}
+  - {date: 2026-10-29, action: "Slack instruction"}
