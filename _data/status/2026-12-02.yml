@@ -5,14 +5,27 @@ event:
   location: "CSE Building, Room 1242"
   zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
 phase: planning
-needs_steve: []
+needs_steve:
+  - "Arun (CSE/DSC) asked whether his CSE/DSC 234 TA-interview topic is worth presenting"
+  - "Ask Nate Delson (MAE), suggested by Stefan Llewellyn Smith?"
+  - "Robert Heath can't make Dec 2 and asked about the +claude address"
 lineup: []
 proposals:
-  - {name: "Robert Heath", dept: "ECE", topic: "AI workflow for reviewing/writing papers", status: proposed}
-  - {name: "Alex Phan", dept: "CNE", topic: "student AI-use surveys", status: proposed}
+  - {name: "Robert Heath", dept: "ECE", topic: "AI workflow for reviewing/writing papers", status: overflow, received: 2026-10-29}
+  - {name: "Alex Phan", dept: "CNE", topic: "Student Listening Campaign Results on Artificial Intelligence: In-Classroom and Career Preparation Insights", status: proposed, received: 2026-10-29}
+  - {name: "Reem Khojah", dept: "BENG", topic: "AI-assisted prototype to automate ABET student outcome reports", status: proposed, received: 2026-10-28}
+  - {name: "Malladi", dept: "CSE", topic: "CSE 151B: project structure for learning to use AI well", status: proposed, received: 2026-10-28}
+  - {name: "Arun", dept: "CSE/DSC", topic: "LLM-supported TA interviews for take-home projects (CSE/DSC 234)", status: proposed, received: 2026-10-28}
 rsvps:
   - {name: "Sarah Carvalho", dept: "Teaching + Learning Commons", mode: in person, received: 2026-10-28}
-counts: {in_person: 1, zoom: 0, presenters: 0, dietary_notes: 0}
+  - {name: "Robert Sah", dept: "BENG", mode: zoom, received: 2026-10-28}
+  - {name: "Stefan Llewellyn Smith", dept: "MAE", mode: in person, received: 2026-10-28}
+  - {name: "Zach Johnson", dept: "UCSD AI Strategy", mode: zoom, received: 2026-10-28}
+  - {name: "Malladi", dept: "CSE", mode: in person, received: 2026-10-28}
+  - {name: "Gary", dept: "", mode: regrets, received: 2026-10-28}
+  - {name: "Ian Galton", dept: "", mode: in person, received: 2026-10-29}
+  - {name: "Mike Tolley", dept: "MAE", mode: in person, received: 2026-10-29}
+counts: {in_person: 5, zoom: 2, presenters: 3, dietary_notes: 1}
 log:
   - {date: 2026-10-22, action: "instance opened"}
   - {date: 2026-10-22, action: "date set"}
@@ -41,3 +54,6 @@ log:
   - {date: 2026-10-28, action: "sent recruiting emails"}
   - {date: 2026-10-28, action: "ingested RSVP"}
   - {date: 2026-10-29, action: "Slack instruction"}
+  - {date: 2026-10-29, action: "ingested RSVPs"}
+  - {date: 2026-10-29, action: "ingested proposals"}
+  - {date: 2026-10-29, action: "presenter replies"}
