@@ -25,7 +25,8 @@ rsvps:
   - {name: "Gary", dept: "", mode: regrets, received: 2026-10-28}
   - {name: "Ian Galton", dept: "", mode: in person, received: 2026-10-29}
   - {name: "Mike Tolley", dept: "MAE", mode: in person, received: 2026-10-29}
-counts: {in_person: 5, zoom: 2, presenters: 3, dietary_notes: 1}
+  - {name: "Siavash Mirarab", dept: "ECE", mode: in person, received: 2026-10-29}
+counts: {in_person: 6, zoom: 2, presenters: 3, dietary_notes: 1}
 log:
   - {date: 2026-10-22, action: "instance opened"}
   - {date: 2026-10-22, action: "date set"}
@@ -57,3 +58,4 @@ log:
   - {date: 2026-10-29, action: "ingested RSVPs"}
   - {date: 2026-10-29, action: "ingested proposals"}
   - {date: 2026-10-29, action: "presenter replies"}
+  - {date: 2026-10-29, action: "ingested RSVP"}
