@@ -6,15 +6,16 @@ event:
   zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
 phase: planning
 needs_steve:
-  - "Arun (CSE/DSC) asked whether his CSE/DSC 234 TA-interview topic is worth presenting"
-  - "Ask Nate Delson (MAE), suggested by Stefan Llewellyn Smith?"
-  - "Robert Heath can't make Dec 2 and asked about the +claude address"
+  - "Send the reply to Arun (in your Gmail Drafts)"
+  - "Send the recruiting email to Nate Delson (in your Gmail Drafts)"
+  - "Send the reply to Robert Heath (in your Gmail Drafts)"
 lineup: []
 proposals:
   - {name: "Robert Heath", dept: "ECE", topic: "AI workflow for reviewing/writing papers", status: overflow, received: 2026-10-29}
   - {name: "Alex Phan", dept: "CNE", topic: "Student Listening Campaign Results on Artificial Intelligence: In-Classroom and Career Preparation Insights", status: proposed, received: 2026-10-29}
   - {name: "Reem Khojah", dept: "BENG", topic: "AI-assisted prototype to automate ABET student outcome reports", status: proposed, received: 2026-10-28}
   - {name: "Malladi", dept: "CSE", topic: "CSE 151B: project structure for learning to use AI well", status: proposed, received: 2026-10-28}
+  - {name: "Nate Delson", dept: "MAE", topic: "Big-picture view of AI", status: proposed, received: 2026-10-29}
   - {name: "Arun", dept: "CSE/DSC", topic: "LLM-supported TA interviews for take-home projects (CSE/DSC 234)", status: proposed, received: 2026-10-28}
 rsvps:
   - {name: "Sarah Carvalho", dept: "Teaching + Learning Commons", mode: in person, received: 2026-10-28}
@@ -59,3 +60,7 @@ log:
   - {date: 2026-10-29, action: "ingested proposals"}
   - {date: 2026-10-29, action: "presenter replies"}
   - {date: 2026-10-29, action: "ingested RSVP"}
+  - {date: 2026-10-30, action: "Slack instruction"}
+  - {date: 2026-10-30, action: "drafted reply to Arun"}
+  - {date: 2026-10-30, action: "drafted recruiting email"}
+  - {date: 2026-10-30, action: "drafted reply to Heath"}
