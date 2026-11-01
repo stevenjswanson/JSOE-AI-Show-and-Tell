@@ -6,6 +6,7 @@ event:
   zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
 phase: planning
 needs_steve:
+  - "Reply to Adam Engler about BENG presenters (draft in your Gmail Drafts); say whether he should push Shankar Subramaniam"
   - "Send the recruiting email to Nate Delson (in your Gmail Drafts)"
   - "Send the reply to Robert Heath (in your Gmail Drafts)"
 lineup: []
@@ -68,3 +69,4 @@ log:
   - {date: 2026-10-30, action: "sent reply to Arun"}
   - {date: 2026-10-30, action: "ingested proposal"}
   - {date: 2026-10-31, action: "ingested RSVP"}
+  - {date: 2026-11-01, action: "drafted reply to Engler"}
