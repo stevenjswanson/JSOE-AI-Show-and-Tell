@@ -6,9 +6,7 @@ event:
   zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
 phase: planning
 needs_steve:
-  - "Reply to Adam Engler about BENG presenters (draft in your Gmail Drafts); say whether he should push Shankar Subramaniam"
   - "Send the recruiting email to Nate Delson (in your Gmail Drafts)"
-  - "Send the reply to Robert Heath (in your Gmail Drafts)"
 lineup: []
 proposals:
   - {name: "Robert Heath", dept: "ECE", topic: "AI workflow for reviewing/writing papers", status: overflow, received: 2026-10-29}
@@ -17,6 +15,7 @@ proposals:
   - {name: "Malladi", dept: "CSE", topic: "CSE 151B: project structure for learning to use AI well", status: proposed, received: 2026-10-28}
   - {name: "Nate Delson", dept: "MAE", topic: "Big-picture view of AI", status: proposed, received: 2026-10-29}
   - {name: "Arun Kumar", dept: "CSE/DSC", topic: "LLM-supported TA interviews for take-home projects (CSE/DSC 234)", status: proposed, received: 2026-10-28}
+  - {name: "Shankar Subramaniam", dept: "BENG", topic: "", status: proposed, received: 2026-11-01}
   - {name: "Silberman", dept: "", topic: "The Evolution of Physical AI at UC San Diego: A 10-Year Journey", status: proposed, received: 2026-10-30}
 rsvps:
   - {name: "Sarah Carvalho", dept: "Teaching + Learning Commons", mode: in person, received: 2026-10-28}
@@ -70,3 +69,6 @@ log:
   - {date: 2026-10-30, action: "ingested proposal"}
   - {date: 2026-10-31, action: "ingested RSVP"}
   - {date: 2026-11-01, action: "drafted reply to Engler"}
+  - {date: 2026-11-02, action: "sent reply to Engler"}
+  - {date: 2026-11-02, action: "sent reply to Heath"}
+  - {date: 2026-11-02, action: "Shankar asked"}
