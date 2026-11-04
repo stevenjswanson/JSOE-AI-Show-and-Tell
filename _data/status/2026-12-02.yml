@@ -5,8 +5,7 @@ event:
   location: "CSE Building, Room 1242"
   zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
 phase: planning
-needs_steve:
-  - "Send the reply to Nate Delson about the format (in your Gmail Drafts)"
+needs_steve: []
 lineup: []
 proposals:
   - {name: "Robert Heath", dept: "ECE", topic: "AI workflow for reviewing/writing papers", status: overflow, received: 2026-10-29}
@@ -77,3 +76,4 @@ log:
   - {date: 2026-11-03, action: "presenter reply"}
   - {date: 2026-11-03, action: "drafted reply to Delson"}
   - {date: 2026-11-03, action: "Slack brief posted"}
+  - {date: 2026-11-03, action: "sent Delson reply"}
