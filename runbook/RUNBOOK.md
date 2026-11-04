@@ -127,6 +127,8 @@ nothing and post nothing.
    for next time); **RSVPs** (in person / Zoom / dietary counts); **Risks** (overdue steps,
    fewer than 5 presenters at T-17, a presenter silent 3+ days after the confirmation email,
    recording not saved by T+20, broken links); **Tomorrow**.
+   List presenters as bullets, one per line, under each status (yes / proposed / asked /
+   held), never as a comma-separated list.
    Report only what happened. Leave out non-events ("calendar event unchanged", "no new
    RSVPs", "no Slack instructions", "nothing from X"); drop a section that would be empty.
 6. **Tell Steve** when *Needs Steve* is non-empty, something changed that he should see, or
