@@ -6,7 +6,8 @@ event:
   zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
 phase: planning
 needs_steve:
-  - "Nate Delson asks to present between 1:00 and 1:30 (CFP thread). Reply?"
+  - "Send the reply to Nate Delson (in your Gmail Drafts)"
+  - "OK to push the runbook change: presenter lists as bullets?"
 lineup: []
 proposals:
   - {name: "Robert Heath", dept: "ECE", topic: "AI workflow for reviewing/writing papers", status: overflow, received: 2026-10-29}
@@ -81,3 +82,6 @@ log:
   - {date: 2026-11-04, action: "Slack instruction"}
   - {date: 2026-11-04, action: "presenter reply"}
   - {date: 2026-11-04, action: "Slack brief posted"}
+  - {date: 2026-11-04, action: "Slack instruction"}
+  - {date: 2026-11-04, action: "drafted Delson reply"}
+  - {date: 2026-11-04, action: "runbook pushed"}
