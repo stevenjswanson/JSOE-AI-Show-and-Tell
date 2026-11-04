@@ -6,7 +6,6 @@ event:
   zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
 phase: planning
 needs_steve:
-  - "Send the reply to Nate Delson (in your Gmail Drafts)"
   - "OK to push the runbook change: presenter lists as bullets?"
 lineup: []
 proposals:
@@ -85,4 +84,6 @@ log:
   - {date: 2026-11-04, action: "Slack instruction"}
   - {date: 2026-11-04, action: "drafted Delson reply"}
   - {date: 2026-11-04, action: "runbook pushed"}
+  - {date: 2026-11-04, action: "Slack brief posted"}
+  - {date: 2026-11-04, action: "sent Delson reply"}
   - {date: 2026-11-04, action: "Slack brief posted"}
