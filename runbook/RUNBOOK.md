@@ -127,6 +127,8 @@ nothing and post nothing.
    for next time); **RSVPs** (in person / Zoom / dietary counts); **Risks** (overdue steps,
    fewer than 5 presenters at T-17, a presenter silent 3+ days after the confirmation email,
    recording not saved by T+20, broken links); **Tomorrow**.
+   Report only what happened. Leave out non-events ("calendar event unchanged", "no new
+   RSVPs", "no Slack instructions", "nothing from X"); drop a section that would be empty.
 6. **Tell Steve** when *Needs Steve* is non-empty, something changed that he should see, or
    he gave an instruction (acknowledge it):
    - **Slack**: post the brief to `slack_channel_id`, starting with `[agent]` (Needs Steve
@@ -355,6 +357,8 @@ These apply to every email draft, brief, Slack post and status entry.
   except to state a known fact the recipient needs (e.g. "the room declined the invite").
   If a template line isn't true this time, delete it rather than reword it into something
   new.
+- **No non-events.** Don't tell Steve what hasn't happened or hasn't changed (calendar
+  unchanged, no new RSVPs, no reply yet). Report only changes and what he must act on.
 - **Be flexible about facts.** Dates, times, rooms, recipients and steps change when Steve
   says so or when the record shows it; follow the record, not the template's defaults.
 
