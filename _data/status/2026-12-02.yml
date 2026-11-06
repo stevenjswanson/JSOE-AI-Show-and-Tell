@@ -12,7 +12,7 @@ proposals:
   - {name: "Robert Heath", dept: "ECE", topic: "AI workflow for reviewing/writing papers", status: overflow, received: 2026-10-29}
   - {name: "Alex Phan", dept: "CNE", topic: "Student Listening Campaign Results on Artificial Intelligence: In-Classroom and Career Preparation Insights", status: proposed, received: 2026-10-29}
   - {name: "Reem Khojah", dept: "BENG", topic: "AI-assisted prototype to automate ABET student outcome reports", status: proposed, received: 2026-10-28}
-  - {name: "Malladi", dept: "CSE", topic: "CSE 151B: project structure for learning to use AI well", status: proposed, received: 2026-10-28}
+  - {name: "Sadhika Malladi", dept: "CSE", topic: "CSE 151B: project structure for learning to use AI well", status: proposed, received: 2026-10-28}
   - {name: "Nate Delson", dept: "MAE", topic: "QUEST: A Student Guide to Learning in the Age of AI", status: proposed, received: 2026-11-03}
   - {name: "Arun Kumar", dept: "CSE/DSC", topic: "LLM-supported TA interviews for take-home projects (CSE/DSC 234)", status: proposed, received: 2026-10-28}
   - {name: "Shankar Subramaniam", dept: "BENG", topic: "", status: proposed, received: 2026-11-01}
@@ -22,7 +22,7 @@ rsvps:
   - {name: "Robert Sah", dept: "BENG", mode: zoom, received: 2026-10-28}
   - {name: "Stefan Llewellyn Smith", dept: "MAE", mode: in person, received: 2026-10-28}
   - {name: "Zach Johnson", dept: "UCSD AI Strategy", mode: zoom, received: 2026-10-28}
-  - {name: "Malladi", dept: "CSE", mode: in person, received: 2026-10-28}
+  - {name: "Sadhika Malladi", dept: "CSE", mode: in person, received: 2026-10-28}
   - {name: "Gary", dept: "", mode: regrets, received: 2026-10-28}
   - {name: "Ian Galton", dept: "", mode: in person, received: 2026-10-29}
   - {name: "Mike Tolley", dept: "MAE", mode: in person, received: 2026-10-29}
@@ -87,3 +87,4 @@ log:
   - {date: 2026-11-04, action: "Slack brief posted"}
   - {date: 2026-11-04, action: "sent Delson reply"}
   - {date: 2026-11-04, action: "Slack brief posted"}
+  - {date: 2026-11-05, action: "updated presenter name"}
