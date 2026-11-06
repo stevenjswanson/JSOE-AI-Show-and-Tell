@@ -6,6 +6,7 @@ event:
   zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
 phase: planning
 needs_steve:
+  - "Jon Wade (MAE) proposed a talk: draft a reply?"
   - "OK to push the runbook change: presenter lists as bullets?"
 lineup: []
 proposals:
@@ -17,6 +18,7 @@ proposals:
   - {name: "Arun Kumar", dept: "CSE/DSC", topic: "LLM-supported TA interviews for take-home projects (CSE/DSC 234)", status: proposed, received: 2026-10-28}
   - {name: "Shankar Subramaniam", dept: "BENG", topic: "", status: proposed, received: 2026-11-01}
   - {name: "Silberman", dept: "", topic: "The Evolution of Physical AI at UC San Diego: A 10-Year Journey", status: proposed, received: 2026-10-30}
+  - {name: "Jon Wade", dept: "MAE", topic: "From Artifacts to Judgment: A Critical-Thinking Loop for the Age of Generative AI", status: proposed, received: 2026-11-05}
 rsvps:
   - {name: "Sarah Carvalho", dept: "Teaching + Learning Commons", mode: in person, received: 2026-10-28}
   - {name: "Robert Sah", dept: "BENG", mode: zoom, received: 2026-10-28}
@@ -28,7 +30,8 @@ rsvps:
   - {name: "Mike Tolley", dept: "MAE", mode: in person, received: 2026-10-29}
   - {name: "Siavash Mirarab", dept: "ECE", mode: in person, received: 2026-10-29}
   - {name: "Marko Lubarda", dept: "", mode: zoom, received: 2026-10-30}
-counts: {in_person: 6, zoom: 3, presenters: 4, dietary_notes: 1}
+  - {name: "Jon Wade", dept: "MAE", mode: in person, received: 2026-11-05}
+counts: {in_person: 7, zoom: 3, presenters: 4, dietary_notes: 1}
 log:
   - {date: 2026-10-22, action: "instance opened"}
   - {date: 2026-10-22, action: "date set"}
@@ -88,3 +91,5 @@ log:
   - {date: 2026-11-04, action: "sent Delson reply"}
   - {date: 2026-11-04, action: "Slack brief posted"}
   - {date: 2026-11-05, action: "updated presenter name"}
+  - {date: 2026-11-06, action: "ingested proposal"}
+  - {date: 2026-11-06, action: "ingested RSVP"}
