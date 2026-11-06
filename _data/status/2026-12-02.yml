@@ -93,3 +93,4 @@ log:
   - {date: 2026-11-05, action: "updated presenter name"}
   - {date: 2026-11-06, action: "ingested proposal"}
   - {date: 2026-11-06, action: "ingested RSVP"}
+  - {date: 2026-11-06, action: "Slack brief posted"}
