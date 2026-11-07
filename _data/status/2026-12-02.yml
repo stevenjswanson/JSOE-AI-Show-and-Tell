@@ -17,7 +17,7 @@ proposals:
   - {name: "Nate Delson", dept: "MAE", topic: "QUEST: A Student Guide to Learning in the Age of AI", status: proposed, received: 2026-11-03}
   - {name: "Arun Kumar", dept: "CSE/DSC", topic: "LLM-supported TA interviews for take-home projects (CSE/DSC 234)", status: proposed, received: 2026-10-28}
   - {name: "Shankar Subramaniam", dept: "BENG", topic: "", status: proposed, received: 2026-11-01}
-  - {name: "Silberman", dept: "", topic: "The Evolution of Physical AI at UC San Diego: A 10-Year Journey", status: proposed, received: 2026-10-30}
+  - {name: "Jack Silberman", dept: "", topic: "The Evolution of Physical AI at UC San Diego: A 10-Year Journey", status: proposed, received: 2026-10-30}
   - {name: "Jon Wade", dept: "MAE", topic: "From Artifacts to Judgment: A Critical-Thinking Loop for the Age of Generative AI", status: proposed, received: 2026-11-05}
 rsvps:
   - {name: "Sarah Carvalho", dept: "Teaching + Learning Commons", mode: in person, received: 2026-10-28}
@@ -94,3 +94,4 @@ log:
   - {date: 2026-11-06, action: "ingested proposal"}
   - {date: 2026-11-06, action: "ingested RSVP"}
   - {date: 2026-11-06, action: "Slack brief posted"}
+  - {date: 2026-11-06, action: "updated presenter name"}
