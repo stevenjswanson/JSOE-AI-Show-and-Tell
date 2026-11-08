@@ -6,6 +6,7 @@ event:
   zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
 phase: planning
 needs_steve:
+  - "Send the CFP reminder (in your Gmail Drafts)"
   - "Jon Wade (MAE) proposed a talk: draft a reply?"
   - "OK to push the runbook change: presenter lists as bullets?"
 lineup: []
@@ -95,3 +96,4 @@ log:
   - {date: 2026-11-06, action: "ingested RSVP"}
   - {date: 2026-11-06, action: "Slack brief posted"}
   - {date: 2026-11-06, action: "updated presenter name"}
+  - {date: 2026-11-08, action: "drafted CFP reminder"}
