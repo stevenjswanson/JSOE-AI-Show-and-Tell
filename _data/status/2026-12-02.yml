@@ -104,3 +104,4 @@ log:
   - {date: 2026-11-06, action: "updated presenter name"}
   - {date: 2026-11-08, action: "drafted CFP reminder"}
   - {date: 2026-11-13, action: "lineup proposed"}
+  - {date: 2026-11-13, action: "Slack brief posted"}
