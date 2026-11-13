@@ -6,10 +6,16 @@ event:
   zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
 phase: planning
 needs_steve:
+  - "Lineup: 4 of 5 yes. How to fill the fifth slot?"
+  - "Nate Delson asked for 1:00-1:30; slots run 12:05-12:55. Where should he go?"
   - "Send the CFP reminder (in your Gmail Drafts)"
   - "Jon Wade (MAE) proposed a talk: draft a reply?"
   - "OK to push the runbook change: presenter lists as bullets?"
-lineup: []
+lineup:
+  - {time: "12:05", presenter: "Alex Phan", title: "Student Listening Campaign Results on Artificial Intelligence: In-Classroom and Career Preparation Insights", status: pending}
+  - {time: "12:15", presenter: "Reem Khojah", title: "AI-assisted prototype to automate ABET student outcome reports", status: pending}
+  - {time: "12:25", presenter: "Sadhika Malladi", title: "CSE 151B: project structure for learning to use AI well", status: pending}
+  - {time: "12:35", presenter: "Nate Delson", title: "QUEST: A Student Guide to Learning in the Age of AI", status: pending}
 proposals:
   - {name: "Robert Heath", dept: "ECE", topic: "AI workflow for reviewing/writing papers", status: overflow, received: 2026-10-29}
   - {name: "Alex Phan", dept: "CNE", topic: "Student Listening Campaign Results on Artificial Intelligence: In-Classroom and Career Preparation Insights", status: proposed, received: 2026-10-29}
@@ -97,3 +103,4 @@ log:
   - {date: 2026-11-06, action: "Slack brief posted"}
   - {date: 2026-11-06, action: "updated presenter name"}
   - {date: 2026-11-08, action: "drafted CFP reminder"}
+  - {date: 2026-11-13, action: "lineup proposed"}
