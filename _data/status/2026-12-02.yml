@@ -6,7 +6,8 @@ event:
   zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
 phase: planning
 needs_steve:
-  - "Lineup: 4 of 5 yes. How to fill the fifth slot?"
+  - "Approve the lineup (4 of 5 yes); presenter confirmations are due Wed Nov 18"
+  - "How to fill the fifth slot?"
   - "Nate Delson asked for 1:00-1:30; slots run 12:05-12:55. Where should he go?"
   - "Send the CFP reminder (in your Gmail Drafts)"
   - "Jon Wade (MAE) proposed a talk: draft a reply?"
@@ -105,3 +106,4 @@ log:
   - {date: 2026-11-08, action: "drafted CFP reminder"}
   - {date: 2026-11-13, action: "lineup proposed"}
   - {date: 2026-11-13, action: "Slack brief posted"}
+  - {date: 2026-11-16, action: "Slack brief posted"}
