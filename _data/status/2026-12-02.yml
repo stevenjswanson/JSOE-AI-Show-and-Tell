@@ -6,7 +6,7 @@ event:
   zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
 phase: planning
 needs_steve:
-  - "Approve the lineup (4 of 5 yes); confirmations and the Mon Nov 23 announcement wait on it"
+  - "Approve the lineup (4 of 5 yes); confirmations, the site lineup and the announcement (set for today, Mon Nov 23) wait on it"
   - "How to fill the fifth slot?"
   - "Nate Delson asked for 1:00-1:30; slots run 12:05-12:55. Where should he go?"
   - "Send the CFP reminder (in your Gmail Drafts)"
@@ -109,3 +109,5 @@ log:
   - {date: 2026-11-16, action: "Slack brief posted"}
   - {date: 2026-11-18, action: "Slack brief posted"}
   - {date: 2026-11-20, action: "Slack brief posted"}
+  - {date: 2026-11-23, action: "Drive folder created"}
+  - {date: 2026-11-23, action: "brief posted"}
