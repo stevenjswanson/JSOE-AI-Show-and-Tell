@@ -87,7 +87,8 @@ def build():
         title=esc(config["title"]),
         contact_email=esc(config["contact_email"]),
         tech_support=esc(config["tech_support"]),
-        sessions="\n\n".join(render_session(s, config) for s in sessions),
+        # Newest meeting first.
+        sessions="\n\n".join(render_session(s, config) for s in reversed(sessions)),
     )
 
 

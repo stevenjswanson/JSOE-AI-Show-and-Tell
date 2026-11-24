@@ -62,7 +62,7 @@ summary = """..."""                         # plain text; curly quotes/dashes ar
   url = "https://..."                       # any non-Drive link
 ```
 
-Talks appear on the page in file order; sessions in date order. A session with no
+Talks appear on the page in file order; sessions newest first. A session with no
 talks shows "Speakers to be announced."
 
 ## Planning a meeting
