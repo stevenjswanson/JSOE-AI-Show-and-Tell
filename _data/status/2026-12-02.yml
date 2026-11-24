@@ -6,23 +6,26 @@ event:
   zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
 phase: planning
 needs_steve:
-  - "Approve the lineup (4 of 5 yes); confirmations, the site lineup and the announcement (set for today, Mon Nov 23) wait on it"
-  - "How to fill the fifth slot?"
-  - "Nate Delson asked for 1:00-1:30; slots run 12:05-12:55. Where should he go?"
-  - "Send the CFP reminder (in your Gmail Drafts)"
-  - "Jon Wade (MAE) proposed a talk: draft a reply?"
+  - "Send the presenter confirmation (in your Gmail Drafts)"
+  - "Send the announcement (in your Gmail Drafts)"
+  - "Remove the Google Meet links from the five presenter calendar invites"
+  - "Your 1:00 talk title?"
+  - "Release or overflow notes for Jack Silberman, Jon Wade and Shankar Subramaniam?"
+  - "Delete the CFP reminder draft?"
 lineup:
-  - {time: "12:05", presenter: "Alex Phan", title: "Student Listening Campaign Results on Artificial Intelligence: In-Classroom and Career Preparation Insights", status: pending}
+  - {time: "12:00", presenter: "Alex Phan", title: "Student Listening Campaign Results on Artificial Intelligence: In-Classroom and Career Preparation Insights", status: pending}
   - {time: "12:15", presenter: "Reem Khojah", title: "AI-assisted prototype to automate ABET student outcome reports", status: pending}
-  - {time: "12:25", presenter: "Sadhika Malladi", title: "CSE 151B: project structure for learning to use AI well", status: pending}
-  - {time: "12:35", presenter: "Nate Delson", title: "QUEST: A Student Guide to Learning in the Age of AI", status: pending}
+  - {time: "12:30", presenter: "Sadhika Malladi", title: "CSE 151B: project structure for learning to use AI well", status: pending}
+  - {time: "12:45", presenter: "Arun Kumar", title: "LLM-supported TA interviews for take-home projects (CSE/DSC 234)", status: pending}
+  - {time: "1:00", presenter: "Steve Swanson", title: "TBA", status: confirmed}
+  - {time: "1:15", presenter: "Nate Delson", title: "QUEST: A Student Guide to Learning in the Age of AI", status: pending}
 proposals:
   - {name: "Robert Heath", dept: "ECE", topic: "AI workflow for reviewing/writing papers", status: overflow, received: 2026-10-29}
-  - {name: "Alex Phan", dept: "CNE", topic: "Student Listening Campaign Results on Artificial Intelligence: In-Classroom and Career Preparation Insights", status: proposed, received: 2026-10-29}
-  - {name: "Reem Khojah", dept: "BENG", topic: "AI-assisted prototype to automate ABET student outcome reports", status: proposed, received: 2026-10-28}
-  - {name: "Sadhika Malladi", dept: "CSE", topic: "CSE 151B: project structure for learning to use AI well", status: proposed, received: 2026-10-28}
-  - {name: "Nate Delson", dept: "MAE", topic: "QUEST: A Student Guide to Learning in the Age of AI", status: proposed, received: 2026-11-03}
-  - {name: "Arun Kumar", dept: "CSE/DSC", topic: "LLM-supported TA interviews for take-home projects (CSE/DSC 234)", status: proposed, received: 2026-10-28}
+  - {name: "Alex Phan", dept: "CNE", topic: "Student Listening Campaign Results on Artificial Intelligence: In-Classroom and Career Preparation Insights", status: scheduled, received: 2026-10-29}
+  - {name: "Reem Khojah", dept: "BENG", topic: "AI-assisted prototype to automate ABET student outcome reports", status: scheduled, received: 2026-10-28}
+  - {name: "Sadhika Malladi", dept: "CSE", topic: "CSE 151B: project structure for learning to use AI well", status: scheduled, received: 2026-10-28}
+  - {name: "Nate Delson", dept: "MAE", topic: "QUEST: A Student Guide to Learning in the Age of AI", status: scheduled, received: 2026-11-03}
+  - {name: "Arun Kumar", dept: "CSE/DSC", topic: "LLM-supported TA interviews for take-home projects (CSE/DSC 234)", status: scheduled, received: 2026-10-28}
   - {name: "Shankar Subramaniam", dept: "BENG", topic: "", status: proposed, received: 2026-11-01}
   - {name: "Jack Silberman", dept: "", topic: "The Evolution of Physical AI at UC San Diego: A 10-Year Journey", status: proposed, received: 2026-10-30}
   - {name: "Jon Wade", dept: "MAE", topic: "From Artifacts to Judgment: A Critical-Thinking Loop for the Age of Generative AI", status: proposed, received: 2026-11-05}
@@ -38,7 +41,7 @@ rsvps:
   - {name: "Siavash Mirarab", dept: "ECE", mode: in person, received: 2026-10-29}
   - {name: "Marko Lubarda", dept: "", mode: zoom, received: 2026-10-30}
   - {name: "Jon Wade", dept: "MAE", mode: in person, received: 2026-11-05}
-counts: {in_person: 7, zoom: 3, presenters: 4, dietary_notes: 1}
+counts: {in_person: 7, zoom: 3, presenters: 6, dietary_notes: 1}
 log:
   - {date: 2026-10-22, action: "instance opened"}
   - {date: 2026-10-22, action: "date set"}
@@ -111,3 +114,8 @@ log:
   - {date: 2026-11-23, action: "Drive folder created"}
   - {date: 2026-11-23, action: "brief posted"}
   - {date: 2026-11-23, action: "runbook change pushed"}
+  - {date: 2026-11-23, action: "lineup approved"}
+  - {date: 2026-11-23, action: "drafted confirmation"}
+  - {date: 2026-11-23, action: "presenter invites sent"}
+  - {date: 2026-11-23, action: "site pushed"}
+  - {date: 2026-11-23, action: "drafted announcement"}
