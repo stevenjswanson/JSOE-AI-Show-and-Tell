@@ -11,7 +11,6 @@ needs_steve:
   - "Nate Delson asked for 1:00-1:30; slots run 12:05-12:55. Where should he go?"
   - "Send the CFP reminder (in your Gmail Drafts)"
   - "Jon Wade (MAE) proposed a talk: draft a reply?"
-  - "OK to push the runbook change: presenter lists as bullets?"
 lineup:
   - {time: "12:05", presenter: "Alex Phan", title: "Student Listening Campaign Results on Artificial Intelligence: In-Classroom and Career Preparation Insights", status: pending}
   - {time: "12:15", presenter: "Reem Khojah", title: "AI-assisted prototype to automate ABET student outcome reports", status: pending}
@@ -111,3 +110,4 @@ log:
   - {date: 2026-11-20, action: "Slack brief posted"}
   - {date: 2026-11-23, action: "Drive folder created"}
   - {date: 2026-11-23, action: "brief posted"}
+  - {date: 2026-11-23, action: "runbook change pushed"}
