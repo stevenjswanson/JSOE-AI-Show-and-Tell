@@ -39,7 +39,8 @@ rsvps:
   - {name: "Siavash Mirarab", dept: "ECE", mode: in person, received: 2026-10-29}
   - {name: "Marko Lubarda", dept: "", mode: zoom, received: 2026-10-30}
   - {name: "Jon Wade", dept: "MAE", mode: in person, received: 2026-11-05}
-counts: {in_person: 7, zoom: 3, presenters: 6, dietary_notes: 2}
+  - {name: "Vira Kravets", dept: "", mode: in person, received: 2026-11-24}
+counts: {in_person: 8, zoom: 3, presenters: 6, dietary_notes: 3}
 log:
   - {date: 2026-10-22, action: "instance opened"}
   - {date: 2026-10-22, action: "date set"}
@@ -122,3 +123,5 @@ log:
   - {date: 2026-11-23, action: "presenter accepts"}
   - {date: 2026-11-23, action: "presenter replies"}
   - {date: 2026-11-23, action: "brief posted"}
+  - {date: 2026-11-24, action: "ingested RSVP"}
+  - {date: 2026-11-24, action: "brief posted"}
