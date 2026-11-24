@@ -121,3 +121,4 @@ log:
   - {date: 2026-11-23, action: "sent announcement"}
   - {date: 2026-11-23, action: "presenter accepts"}
   - {date: 2026-11-23, action: "presenter replies"}
+  - {date: 2026-11-23, action: "brief posted"}
