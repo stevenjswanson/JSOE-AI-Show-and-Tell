@@ -4,21 +4,19 @@ event:
   end: "13:30"
   location: "CSE Building, Room 1242"
   zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
-phase: planning
+phase: announced
 needs_steve:
-  - "Send the presenter confirmation (in your Gmail Drafts)"
-  - "Send the announcement (in your Gmail Drafts)"
   - "Remove the Google Meet links from the five presenter calendar invites"
   - "Your 1:00 talk title?"
   - "Release or overflow notes for Jack Silberman, Jon Wade and Shankar Subramaniam?"
   - "Delete the CFP reminder draft?"
 lineup:
-  - {time: "12:00", presenter: "Alex Phan", title: "Student Listening Campaign Results on Artificial Intelligence: In-Classroom and Career Preparation Insights", status: pending}
-  - {time: "12:15", presenter: "Reem Khojah", title: "AI-assisted prototype to automate ABET student outcome reports", status: pending}
+  - {time: "12:00", presenter: "Alex Phan", title: "Student Listening Campaign Results on Artificial Intelligence: In-Classroom and Career Preparation Insights", status: confirmed}
+  - {time: "12:15", presenter: "Reem Khojah", title: "AI-assisted prototype to automate ABET student outcome reports", status: confirmed}
   - {time: "12:30", presenter: "Sadhika Malladi", title: "CSE 151B: project structure for learning to use AI well", status: pending}
   - {time: "12:45", presenter: "Arun Kumar", title: "LLM-supported TA interviews for take-home projects (CSE/DSC 234)", status: pending}
   - {time: "1:00", presenter: "Steve Swanson", title: "TBA", status: confirmed}
-  - {time: "1:15", presenter: "Nate Delson", title: "QUEST: A Student Guide to Learning in the Age of AI", status: pending}
+  - {time: "1:15", presenter: "Nate Delson", title: "QUEST: A Student Guide to Learning in the Age of AI", status: confirmed}
 proposals:
   - {name: "Robert Heath", dept: "ECE", topic: "AI workflow for reviewing/writing papers", status: overflow, received: 2026-10-29}
   - {name: "Alex Phan", dept: "CNE", topic: "Student Listening Campaign Results on Artificial Intelligence: In-Classroom and Career Preparation Insights", status: scheduled, received: 2026-10-29}
@@ -41,7 +39,7 @@ rsvps:
   - {name: "Siavash Mirarab", dept: "ECE", mode: in person, received: 2026-10-29}
   - {name: "Marko Lubarda", dept: "", mode: zoom, received: 2026-10-30}
   - {name: "Jon Wade", dept: "MAE", mode: in person, received: 2026-11-05}
-counts: {in_person: 7, zoom: 3, presenters: 6, dietary_notes: 1}
+counts: {in_person: 7, zoom: 3, presenters: 6, dietary_notes: 2}
 log:
   - {date: 2026-10-22, action: "instance opened"}
   - {date: 2026-10-22, action: "date set"}
@@ -119,3 +117,7 @@ log:
   - {date: 2026-11-23, action: "presenter invites sent"}
   - {date: 2026-11-23, action: "site pushed"}
   - {date: 2026-11-23, action: "drafted announcement"}
+  - {date: 2026-11-23, action: "sent confirmation"}
+  - {date: 2026-11-23, action: "sent announcement"}
+  - {date: 2026-11-23, action: "presenter accepts"}
+  - {date: 2026-11-23, action: "presenter replies"}
