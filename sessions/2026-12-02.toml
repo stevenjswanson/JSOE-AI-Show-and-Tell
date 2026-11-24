@@ -1,0 +1,32 @@
+date = 2026-12-02
+drive_folder = "2026-12-02 Show and Tell"
+schedule = "Tentative schedule (12:00–1:30, 15-minute slots; in person and on Zoom)"
+
+[[talks]]
+presenter = "Alex Phan"
+title = "Student Listening Campaign Results on Artificial Intelligence: In-Classroom and Career Preparation Insights"
+time = "12:00"
+
+[[talks]]
+presenter = "Reem Khojah"
+title = "AI-assisted prototype to automate ABET student outcome reports"
+time = "12:15"
+
+[[talks]]
+presenter = "Sadhika Malladi"
+title = "CSE 151B: project structure for learning to use AI well"
+time = "12:30"
+
+[[talks]]
+presenter = "Arun Kumar"
+title = "LLM-supported TA interviews for take-home projects (CSE/DSC 234)"
+time = "12:45"
+
+[[talks]]
+presenter = "Steven Swanson"
+time = "1:00"
+
+[[talks]]
+presenter = "Nate Delson"
+title = "QUEST: A Student Guide to Learning in the Age of AI"
+time = "1:15"

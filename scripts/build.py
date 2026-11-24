@@ -36,10 +36,13 @@ def link_url(link):
     raise ValueError(f"link {link.get('label')!r} needs `url` or `drive_id`")
 
 
-def render_talk(talk):
+def render_talk(talk, show_time=False):
+    name = talk["presenter"]
+    if show_time and talk.get("time"):
+        name = f"{talk['time']} · {name}"
     lines = [
         '<div class="speaker">',
-        f"  <h3>{esc(talk['presenter'])}</h3>",
+        f"  <h3>{esc(name)}</h3>",
     ]
     if talk.get("title"):
         lines.append(f'  <p class="title">{esc(talk["title"])}</p>')
@@ -64,8 +67,13 @@ def render_session(session, config):
     location = session.get("location", config["default_location"])
     heading = f"{d:%B} {d.day}, {d.year} · {location}"
     parts = [f"<h2>{esc(heading)}</h2>"]
+    # Optional `schedule = "Tentative schedule"`: shows the label and each talk's time
+    # (used before the meeting; drop it once the session has its recordings).
+    label = session.get("schedule")
+    if label:
+        parts.append(f'<p class="purpose">{esc(label)}</p>')
     if session["talks"]:
-        parts += [render_talk(t) for t in session["talks"]]
+        parts += [render_talk(t, show_time=bool(label)) for t in session["talks"]]
     else:
         parts.append('<p class="purpose">Speakers to be announced.</p>')
     return "\n\n".join(parts)
