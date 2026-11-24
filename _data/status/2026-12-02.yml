@@ -6,6 +6,7 @@ event:
   zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
 phase: announced
 needs_steve:
+  - "Reply to Madhu Gupta (site link question) and Emily Cowley (asks for calendar invites)"
   - "Remove the Google Meet links from the five presenter calendar invites"
   - "Your 1:00 talk title?"
   - "Release or overflow notes for Jack Silberman, Jon Wade and Shankar Subramaniam?"
@@ -14,7 +15,7 @@ lineup:
   - {time: "12:00", presenter: "Alex Phan", title: "Student Listening Campaign Results on Artificial Intelligence: In-Classroom and Career Preparation Insights", status: confirmed}
   - {time: "12:15", presenter: "Reem Khojah", title: "AI-assisted prototype to automate ABET student outcome reports", status: confirmed}
   - {time: "12:30", presenter: "Sadhika Malladi", title: "CSE 151B: project structure for learning to use AI well", status: pending}
-  - {time: "12:45", presenter: "Arun Kumar", title: "LLM-supported TA interviews for take-home projects (CSE/DSC 234)", status: pending}
+  - {time: "12:45", presenter: "Arun Kumar", title: "LLM-supported TA interviews for take-home projects (CSE/DSC 234)", status: confirmed}
   - {time: "1:00", presenter: "Steve Swanson", title: "TBA", status: confirmed}
   - {time: "1:15", presenter: "Nate Delson", title: "QUEST: A Student Guide to Learning in the Age of AI", status: confirmed}
 proposals:
@@ -33,14 +34,15 @@ rsvps:
   - {name: "Stefan Llewellyn Smith", dept: "MAE", mode: in person, received: 2026-10-28}
   - {name: "Zach Johnson", dept: "UCSD AI Strategy", mode: zoom, received: 2026-10-28}
   - {name: "Sadhika Malladi", dept: "CSE", mode: in person, received: 2026-10-28}
-  - {name: "Gary", dept: "", mode: regrets, received: 2026-10-28}
+  - {name: "Garrison Cottrell", dept: "", mode: regrets, received: 2026-10-28}
   - {name: "Ian Galton", dept: "", mode: in person, received: 2026-10-29}
   - {name: "Mike Tolley", dept: "MAE", mode: in person, received: 2026-10-29}
   - {name: "Siavash Mirarab", dept: "ECE", mode: in person, received: 2026-10-29}
   - {name: "Marko Lubarda", dept: "", mode: zoom, received: 2026-10-30}
   - {name: "Jon Wade", dept: "MAE", mode: in person, received: 2026-11-05}
   - {name: "Vira Kravets", dept: "", mode: in person, received: 2026-11-24}
-counts: {in_person: 8, zoom: 3, presenters: 6, dietary_notes: 3}
+  - {name: "Emily Cowley", dept: "Operational Strategic Initiatives", mode: zoom, received: 2026-11-24}
+counts: {in_person: 8, zoom: 4, presenters: 6, dietary_notes: 3}
 log:
   - {date: 2026-10-22, action: "instance opened"}
   - {date: 2026-10-22, action: "date set"}
@@ -124,4 +126,7 @@ log:
   - {date: 2026-11-23, action: "presenter replies"}
   - {date: 2026-11-23, action: "brief posted"}
   - {date: 2026-11-24, action: "ingested RSVP"}
+  - {date: 2026-11-24, action: "brief posted"}
+  - {date: 2026-11-24, action: "ingested RSVP"}
+  - {date: 2026-11-24, action: "presenter accepts"}
   - {date: 2026-11-24, action: "brief posted"}
