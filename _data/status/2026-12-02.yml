@@ -7,7 +7,6 @@ event:
 phase: announced
 needs_steve:
   - "Reply to Madhu Gupta (site link question) and Emily Cowley (asks for calendar invites)"
-  - "Send the reply to Jessica Pinto (in your Gmail Drafts)"
   - "Remove the Google Meet links from the five presenter calendar invites"
   - "Your 1:00 talk title?"
   - "Release or overflow notes for Jack Silberman, Jon Wade and Shankar Subramaniam?"
@@ -45,7 +44,8 @@ rsvps:
   - {name: "Emily Cowley", dept: "Operational Strategic Initiatives", mode: zoom, received: 2026-11-24}
   - {name: "Jennifer Mullin", dept: "", mode: in person, received: 2026-11-24}
   - {name: "Bob Continetti", dept: "Office of the EVC", mode: zoom, received: 2026-11-24}
-counts: {in_person: 9, zoom: 5, presenters: 6, dietary_notes: 3}
+  - {name: "Kumiko Haas", dept: "Teaching + Learning Commons", mode: zoom, received: 2026-11-24}
+counts: {in_person: 9, zoom: 6, presenters: 6, dietary_notes: 3}
 log:
   - {date: 2026-10-22, action: "instance opened"}
   - {date: 2026-10-22, action: "date set"}
@@ -135,4 +135,7 @@ log:
   - {date: 2026-11-24, action: "brief posted"}
   - {date: 2026-11-24, action: "ingested RSVPs"}
   - {date: 2026-11-24, action: "drafted reply to Pinto"}
+  - {date: 2026-11-24, action: "brief posted"}
+  - {date: 2026-11-24, action: "sent reply to Pinto"}
+  - {date: 2026-11-24, action: "ingested RSVP"}
   - {date: 2026-11-24, action: "brief posted"}
