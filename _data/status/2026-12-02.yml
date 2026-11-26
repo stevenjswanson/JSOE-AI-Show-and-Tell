@@ -9,7 +9,8 @@ needs_steve:
   - "Reply to Madhu Gupta (site link question) and Emily Cowley (asks for calendar invites)"
   - "Remove the Google Meet links from the five presenter calendar invites"
   - "Your 1:00 talk title?"
-  - "Release or overflow notes for Jack Silberman, Jon Wade and Shankar Subramaniam?"
+  - "Jon Wade asked today (CFP thread) whether he can present for 5 minutes. Reply?"
+  - "Release or overflow notes for Jack Silberman and Shankar Subramaniam?"
   - "Delete the CFP reminder draft?"
 lineup:
   - {time: "12:00", presenter: "Alex Phan", title: "Student Listening Campaign Results on Artificial Intelligence: In-Classroom and Career Preparation Insights", status: confirmed}
@@ -139,3 +140,5 @@ log:
   - {date: 2026-11-24, action: "sent reply to Pinto"}
   - {date: 2026-11-24, action: "ingested RSVP"}
   - {date: 2026-11-24, action: "brief posted"}
+  - {date: 2026-11-25, action: "presenter reply"}
+  - {date: 2026-11-25, action: "brief posted"}
