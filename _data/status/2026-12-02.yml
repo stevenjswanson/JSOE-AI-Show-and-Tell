@@ -6,10 +6,11 @@ event:
   zoom: "https://ucsd.zoom.us/j/91093689214?pwd=INZo9wXA04B1s7tdxjwLAOEPF9CiuK.1"
 phase: announced
 needs_steve:
+  - "Send the presenter logistics email (in your Gmail Drafts)"
   - "Reply to Madhu Gupta (site link question) and Emily Cowley (asks for calendar invites)"
   - "Remove the Google Meet links from the five presenter calendar invites"
   - "Your 1:00 talk title?"
-  - "Jon Wade asked today (CFP thread) whether he can present for 5 minutes. Reply?"
+  - "Jon Wade asked Nov 25 (CFP thread) whether he can present for 5 minutes. Reply?"
   - "Release or overflow notes for Jack Silberman and Shankar Subramaniam?"
   - "Delete the CFP reminder draft?"
 lineup:
@@ -142,3 +143,4 @@ log:
   - {date: 2026-11-24, action: "brief posted"}
   - {date: 2026-11-25, action: "presenter reply"}
   - {date: 2026-11-25, action: "brief posted"}
+  - {date: 2026-11-27, action: "drafted presenter logistics"}
